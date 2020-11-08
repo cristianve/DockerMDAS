@@ -1,4 +1,4 @@
-![IMAGE MAIN 1](/imatges/1.png) 
+![IMAGE MAIN 1](/docker-exercises/hw-03/imatges/1.png) 
 ![IMAGE MAIN 2](/imatges/2.png) 
 ![IMAGE MAIN 3](/imatges/3.png) 
 ![IMAGE MAIN 4](/imatges/4.png) 
