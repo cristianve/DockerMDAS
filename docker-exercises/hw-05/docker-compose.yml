@@ -4,7 +4,7 @@ services:
     image: elasticsearch:7.9.3
     container_name: elastic
     environment:
-      - discovery.type='single-node'
+      - discovery.type=single-node
     networks:
       - elastic-network
     ports:
@@ -15,10 +15,11 @@ services:
     networks:
       - elastic-network
     environment:
-      - ELASTICSEARCH_HOST = 'elasticsearch'
-      - ELASTICSEARCH_PORT = 9200
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
     ports:
       - "5601:5601"
       - "9300:9300"
 networks:
     elastic-network:
+      driver: bridge
