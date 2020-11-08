@@ -14,7 +14,7 @@ Esto nos facilitara a la hora de interactuar con la consola del contenedor y a l
 Nos permite lanzar comandos dentro del cmd de la máquina. Ejecutar instruciones como si estuviésemos en el terminal de la máquina.
 Se utiliza normalmente al final del Dockerfile para lanzar la ejecución después de haberlo configurado.
 ### Ejemplo:
-CMD [“executable”,” param1”,” param2”]: CMD [“addNumbers.py”,”2”,”4”] 
+CMD [“executable”,” param1”,” param2”]: CMD [“addNumbers.py”,”2”,”4”]  
 En este caso nos permite ejecutar el fichero addNumbers pasandole los parámetros 2 y 4.
 
 ### Diferencia:
