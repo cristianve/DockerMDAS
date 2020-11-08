@@ -1,7 +1,7 @@
-# CMD VS ENV 🖥⚔️ ️
+# ADD VS COPY 🖥⚔️ ️
 ## ENV:
 La variable ENV nos permite darle un valor ("setear") a las variables de entorno dentro de nuestro contenedor. Las variables de entorno se utilizan para reducir un path (ruta del explorador de ficheros) en una sola palabra.  
-Utilizando **key** = **value**:
+Utilizando **&lt;key>** … **&lt;value>**:
 ### Ejemplo:
 * **ENV** nginx_vhost /etc/nginx/sites-available/default 
 * **ENV** php_conf /etc/php/7.4/fpm/php.ini 
