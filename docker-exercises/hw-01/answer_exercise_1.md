@@ -3,10 +3,10 @@
 La variable ENV nos permite setear las variables de entorno dentro de nuestro contenedor.  
 Utiliza ** "key" =" value" **:
 ### Ejemplo:
-ENV nginx_vhost /etc/nginx/sites-available/default
-ENV php_conf /etc/php/7.4/fpm/php.ini
-ENV nginx_conf /etc/nginx/nginx.conf
-ENV supervisor_conf /etc/supervisor/supervisord.conf
+* ENV nginx_vhost /etc/nginx/sites-available/default 
+* ENV php_conf /etc/php/7.4/fpm/php.ini 
+* ENV nginx_conf /etc/nginx/nginx.conf 
+* ENV supervisor_conf /etc/supervisor/supervisord.conf 
 
 Esto nos facilitara la vida a la hora de interactuar con la consola de la maquina o para lanzar ejecuciones.
 
