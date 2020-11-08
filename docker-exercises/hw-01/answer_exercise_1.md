@@ -1,7 +1,7 @@
 # CMD VS ENV
 ## ENV:
-La variable ENV nos permite setear las variables de entorno dentro de nuestro contenedor.
-Utiliza <key> =<value>:
+La variable ENV nos permite setear las variables de entorno dentro de nuestro contenedor.  
+Utiliza ** "key" =" value" **:
 ### Ejemplo:
 ENV nginx_vhost /etc/nginx/sites-available/default
 ENV php_conf /etc/php/7.4/fpm/php.ini
