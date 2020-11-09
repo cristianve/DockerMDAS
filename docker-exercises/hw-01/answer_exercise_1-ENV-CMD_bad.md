@@ -1,4 +1,4 @@
-# ADD VS COPY 🖥⚔️ ️
+# ENV VS CMD 🖥⚔️ ️
 ## ENV:
 La variable ENV nos permite darle un valor ("setear") a las variables de entorno dentro de nuestro contenedor. Las variables de entorno se utilizan para reducir un path (ruta del explorador de ficheros) en una sola palabra.  
 Utilizando **&lt;key>** … **&lt;value>**:
