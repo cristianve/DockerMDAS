@@ -10,5 +10,5 @@
 ![IMAGE MAIN 4](/docker-exercises/hw-03/imatges/4.png)  
 # b) Terminal - Run:
 ![IMAGE MAIN 5](/docker-exercises/hw-03/imatges/5.png)  
-# b) Resultado final:
+# c) Resultado final:
 ![IMAGE MAIN 6](/docker-exercises/hw-03/imatges/6.png)  
