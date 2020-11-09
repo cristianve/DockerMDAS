@@ -1,7 +1,7 @@
 # a) Installar nginx:1.19.3 por línea de comandos.
 ![IMAGE MAIN 1](/docker-exercises/hw-03/imatges/1.png)  
 # a) Installar nginx con volumen por comandos.
-docker run -it --rm -d -p 8080:80 --name homework -v ~/static_content:/usr/share/nginx/html nginx:1.19.3  
+    docker run -it --rm -d -p 8080:80 --name homework -v ~/static_content:/usr/share/nginx/html nginx:1.19.3  
 # b) Dockerfile:
 ![IMAGE MAIN 2](/docker-exercises/hw-03/imatges/2.png)  
 # b) HTML:
