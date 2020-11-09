@@ -30,5 +30,8 @@ Nos dice si la pagina esta alive "0" o no "1":
 # Resultado
 
 ![HEALTHCHECK](/docker-exercises/hw-04/imatges/resultado.png)  
-    
+
+# Opción optimizada Healthcheck :
+
+    HEALTHCHECK --interval=45s --timeout=5s --start-period=15s --retries=2 CMD curl -f http://localhost:80 || exit 1
     
