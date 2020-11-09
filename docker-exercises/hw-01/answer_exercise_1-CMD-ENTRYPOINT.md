@@ -3,29 +3,28 @@
 ![ENV VS ENTRYPOINT](/docker-exercises/hw-01/imatges/CMDvsENV.PNG)  
 
 ## ENTRYPOINT:
-La variable ENV nos permite darle un valor ("setear") a las variables de entorno dentro de nuestro contenedor. Las variables de entorno se utilizan para reducir un path (ruta del explorador de ficheros) en una sola palabra.  
-Utilizando **&lt;key>** … **&lt;value>**:
-### Ejemplo:
-* **ENTRYPOINT** nginx_vhost /etc/nginx/sites-available/default 
-* **ENTRYPOINT** php_conf /etc/php/7.4/fpm/php.ini 
-* **ENTRYPOINT** nginx_conf /etc/nginx/nginx.conf 
-* **ENTRYPOINT** supervisor_conf /etc/supervisor/supervisord.conf 
+La instrucción ENTRYPOINT le permite configurar un contenedor que se ejecutará como un ejecutable. 
 
-Esto nos facilitara a la hora de interactuar con la consola del contenedor y cuando queramos lanzar ejecuciones.
+### Ejemplo 2 formas de usar ENTRYPOINT:
+* **ENTRYPOINT** ["executable", "param1", "param2"] (exec form, preferred)
+* **ENTRYPOINT** command param1 param2 (shell form) 
+
+El ENTRYPOINT es el programa que se ejecutará, y el valor pasado al contenedor se añadirá al mismo.
+
 
 ## CMD:
-Nos permite lanzar comandos dentro del cmd (Símbolo del sistema) de la máquina. Ejecutar instruciones como si estuviésemos en el terminal de la máquina.
-Se utiliza normalmente al final del Dockerfile para lanzar la ejecución después de haber configurado todo el contenedor, para así ejecutar la aplicacion/servicio.
+El propósito principal de un CMD es proporcionar argumentos para un contenedor de ejecución. Nos permite lanzar comandos dentro del CMD (Símbolo del sistema) del contenedor como si estuviesemos dentro de esta.
 
 ### Ejemplo:
 * **CMD** [“executable”,” param1”,” param2”]
 * **CMD** [“addNumbers.py”,”2”,”4”]
 
-
 En este caso nos permite ejecutar el fichero **addNumbers** pasandole los parámetros **2** y **4**.
 
 ### Diferencia:
-* **ENV** nos permite especificarles las variables de entorno dentro de la maquina para facilitar las ejecuciones mientras que **CMD** nos permite lanzar ejecuciones/comandos como si estuviéramos dentro del terminal del contenedor. 
+* ENTRYPOINT define el ejecutable invocado cuando se inicia el contenedor (para el comando)
 
-## Aclaraciones
-* Normalmente se llama a variables de entorno dentro del CMD (Primero ENV despues CMD).
+* CMD especifica los argumentos que se pasan al ENTRYPOINT (para los argumentos)
+
+### Tips
+* El ENTRYPOINT puede ser anulado especificando un indicador --entrypoint, seguido del nuevo punto de entrada que se desea utilizar.* 
