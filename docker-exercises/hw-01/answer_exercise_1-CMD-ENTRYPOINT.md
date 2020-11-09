@@ -1,6 +1,6 @@
 # ENTRYPOINT VS CMD 🖥⚔️ ️
 
-![ENV VS ENTRYPOINT](/docker-exercises/hw-05/imatges/CMDvsENV.PNG)  
+![ENV VS ENTRYPOINT](/docker-exercises/hw-01/imatges/CMDvsENV.PNG)  
 
 ## ENTRYPOINT:
 La variable ENV nos permite darle un valor ("setear") a las variables de entorno dentro de nuestro contenedor. Las variables de entorno se utilizan para reducir un path (ruta del explorador de ficheros) en una sola palabra.  
